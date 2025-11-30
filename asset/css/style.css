@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+html {
+scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* slider css start */
+
+.owl-theme .owl-dots {
+    display: none !important;
+}
+
+button.owl-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: black !important;
+    color: white !important;
+    width: 30px !important;
+    height: 40px;
+    border-radius: 0 20px 20px 0 !important;
+    margin: 0 !important;
+    font-size: 25px !important;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: black !important;
+    color: white !important;
+    width: 30px !important;
+    height: 40px;
+    border-radius: 20px 0 0 20px !important;
+    margin: 0 !important;
+    font-size: 25px !important;
+}
+
+.slider-section .container {
+    max-width: 100%;
+    position: relative;
+}
+
+.slider-section .container h1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: white;
+    margin-top: 40px;
+    font-size: 41px;
+    font-weight: 700;
+}
+
+.slider-section .container .owl-carousel .item img {
+    width: 100%;
+    display: block;
+}
+
+/* end slider section */
+
+/* start nav section */
+.nav-section {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.nav-section .container .nav-wraper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    align-content: center;
+}
+
+.nav-section .container {
+    background-color: black;
+    padding: 35px 0;
+    width: 1170px;
+}
+
+/* .nav-section .container ul{
+    list-style-type: none;
+}
+.nav-section .container ul li{
+    display: inline-block;
+} */
+.nav-section .container a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* end nev section */
+
+/* start purchase section */
+.purchase .container {
+    text-align: center;
+    align-content: center;
+    padding-bottom: 115px;
+}
+
+.purchase .container h2 {
+    font-size: 70px;
+    margin-top: 160px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.purchase .container p {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.purchase .container a img {
+    margin: 60px 0;
+}
+
+.purchase .container button {
+    padding: 15px 65px;
+    background-color: #313131;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.purchase .container button:hover {
+    background-color: #000;
+}
+
+/* end purchase section */
+
+/* start about fruit shop */
+.about-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 500px;
+
+}
+
+.image-box {
+    position: relative;
+    background-color: #eedcdc;
+    box-sizing: border-box;
+
+}
+
+.image-box img {
+    position: absolute;
+    right: -70px;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.content-box {
+    width: 472px;
+    align-content: end;
+    text-align: center;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    position: relative;
+
+}
+
+.content-box::before {
+    content: '';
+    position: absolute;
+    left: 60%;
+    top: 80px;
+    bottom: 0;
+    width: 2px;
+    height: 139px;
+    background-color: #000;
+}
+
+.content-box h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.content-box p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #000;
+}
+
+/* end about section */
+
+/* start fresh fruit section  */
+.fresh-fruit .container {
+    max-width: 1480px;
+    padding: 180px 0;
+    background: cover;
+}
+
+.fresh-fruit .container h3 {
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 95px;
+    position: relative;
+}
+
+.fresh-fruit .container h3::before {
+    content: '';
+    position: absolute;
+    border: 2px;
+    left: 22%;
+    top: 29px;
+    bottom: 2%;
+    width: 220px;
+    height: 2px;
+    background-color: #000;
+
+}
+
+.fresh-fruit .container .fruits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+    width: 100%;
+}
+
+.fresh-fruit .container .fruits img {
+    width: 100%;
+}
+
+.fresh-fruit .container .fruits .item {
+    position: relative;
+}
+
+.fresh-fruit .container .fruits .item .caption h4 {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.fresh-fruit .container .fruits .item .caption a {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 30px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+.fresh-fruit .container .fruits .item .caption a:hover {
+    background-color: #1a1a1b;
+}
+
+.fresh-fruit .container .fruits .item .caption {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.fresh-fruit .container .fruits .item:hover .caption {
+    top: 50%;
+    opacity: 1;
+}
+
+.fresh-fruit .container .fruits .item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #000000bf;
+    transition: 0.4s;
+}
+
+.fresh-fruit .container .fruits .item:hover::after {
+    height: 100%;
+}
+
+/* end fresh fruit section */
+
+/* start customer fidback */
+.customer-fidback .container h3 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.customer-fidback .container h3::before {
+    content: '';
+    position: absolute;
+    border: 2px;
+    right: 12%;
+    top: 29px;
+    width: 220px;
+    height: 2px;
+    background-color: #000;
+}
+
+.customer-fidback .container .owl-carousel .item img {
+    width: 160px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.customer-fidback .container .owl-carousel .item h4 {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+    color: black;
+    padding: 25px 0;
+}
+
+.customer-fidback .container .owl-carousel .item p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: #1a1a1b;
+    padding-bottom: 80px;
+}
+
+.customer-fidback .container .owl-carousel .owl-nav button.owl-next {
+
+    position: absolute;
+    top: 17%;
+    right: 293px;
+    transform: translateY(-50%);
+    background-color: black !important;
+    color: white !important;
+    width: 40px !important;
+    height: 40px;
+    border-radius: 100% !important;
+    margin: 0 !important;
+    font-size: 25px !important;
+}
+
+.customer-fidback .container .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 14%;
+    left: 272px;
+    transform: translateY(-50%);
+    background-color: black !important;
+    color: white !important;
+    width: 40px !important;
+    height: 40px;
+    border-radius: 100% !important;
+    margin: 0 !important;
+    font-size: 25px !important;
+}
+
+/* end customer customer fidback */
+
+/* sart take call request */
+.request-a-call .container {
+    max-width: 100%;
+}
+
+.request-a-call .container h3 {
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 95px;
+    position: relative;
+}
+
+.request-a-call .container h3::before {
+    content: '';
+    position: absolute;
+    border: 2px;
+    left: 12%;
+    top: 29px;
+    bottom: 2%;
+    width: 220px;
+    height: 2px;
+    background-color: #000;
+}
+
+.request-a-call .container .wraper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.request-a-call .container .wraper .left-side form {
+    text-align: right;
+    margin-bottom: 110px;
+}
+
+.request-a-call .container .wraper .left-side form input {
+    display: inline-block;
+    width: 510px;
+    padding: 20px;
+    margin-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.request-a-call .container .wraper .left-side form button {
+    padding: 17px 60px;
+    margin-right: 398px;
+    margin-top: 40px;
+    border: 1px solid orange;
+    color: white;
+    background-color: orange;
+    cursor: pointer;
+}
+
+.request-a-call .container .wraper .right-side iframe {
+    height: 380px;
+    width: 100%;
+}
+
+/* end request a call  */
+
+/* start footer section  */
+.footer-content {
+    background-color: #2e2e2e;
+}
+
+.footer-content .container {
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.footer-content .container .content-wraper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.footer-content .container h3 {
+    padding-top: 130px;
+    padding-bottom: 95px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.footer-content .container .content-wraper p {
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    padding-bottom: 50px;
+
+}
+
+.footer-content .container .content-wraper a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-content .container .content-wraper p i {
+    padding-right: 15px;
+}
+
+.footer-content .container input {
+    width: 514px;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+}
+
+.footer-content .container button {
+    width: 270px;
+    padding: 15px;
+    background-color: #f89e12;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+
+.footer-content .container .form-icon a i {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    align-content: center;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.footer-content .container .form-icon a i:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.footer-content .container .form-icon a {
+    margin-right: 5px;
+}
+
+.footer-content .container .form-icon a:last-child {
+    margin-right: 50px;
+}
+
+/* start socket section  */
+.socket {
+    background-color: white;
+}
+
+.socket p {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: black;
+    padding: 20px 0;
+}
